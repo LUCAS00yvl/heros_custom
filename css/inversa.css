@@ -1,0 +1,125 @@
+/*
+ * Reset e estilos base (como .container, form, etc.)
+ * foram REMOVIDOS e agora são controlados pelo Bootstrap.
+ *
+ * Mantivemos apenas as cores da sua identidade visual
+ * e as regras para sobrescrever o Bootstrap.
+ */
+
+:root {
+  /* Define a cor primária do Bootstrap para o seu laranja */
+  --bs-primary: #e95d00;
+  --bs-primary-rgb: 233, 93, 0;
+
+  /* Define a cor de fundo do tema escuro */
+  --bs-body-bg: #000000;
+  --bs-body-color: #ffffff;
+  
+  /* Ajusta cores de link */
+  --bs-link-color: #ff6600;
+  --bs-link-hover-color: #f38638;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* --- CLASSES DE FUNDO PERSONALIZADAS --- */
+/* (O Bootstrap .bg-dark é um pouco claro, então usamos .bg-black) */
+
+.bg-black {
+  background-color: #000000 !important;
+}
+
+.bg-dark-gray {
+  background-color: #0e0e0e !important;
+}
+
+.bg-orange {
+  background-color: #e95d00 !important;
+  color: #000; /* Texto preto no fundo laranja */
+}
+
+.bg-orange h2, .bg-orange p {
+  color: #000;
+}
+
+/* --- COMPONENTES --- */
+
+/* Navbar */
+.navbar {
+  background-color: #000000 !important; /* Garante o header preto */
+}
+
+.logo-img {
+  width: 128px;
+  height: auto;
+}
+
+/* Hero Carousel */
+.carousel-item img {
+  height: 450px; /* Sua altura original */
+  object-fit: cover; /* Seu object-fit original */
+  filter: blur(2px) brightness(0.7); /* Seu filtro original */
+}
+
+.carousel-caption {
+  /* Melhora a posição do texto */
+  bottom: 5rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+/* Cards */
+.card {
+  /* Cor de fundo original dos seus cards */
+  background-color: #0e0e0e;
+  border: 1px solid #222; /* Adiciona uma borda sutil */
+}
+
+.card-img {
+  /* Imagem de card na página 'sobre' */
+  width: 100%; /* Faz a imagem preencher o card */
+  height: 255px;
+  object-fit: cover;
+}
+
+/* Formulário (Botão) */
+.contato form button {
+  background-color: #e9e9e9; /* Seu estilo original */
+  color: #000000;
+  border: none;
+}
+.contato form button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Footer */
+footer .email-fonte {
+  color: #ff6600; /* Cor laranja para o link de email */
+  text-decoration: none;
+}
+footer .email-fonte:hover {
+  text-decoration: underline;
+}
+
+.footer-social a {
+  background-color: #ff6600; /* Cor laranja original */
+  color: #ffffff; /* Texto branco */
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+.footer-social a:hover {
+  background-color: #b44901; /* Cor hover original */
+}
+
+/* Mapa */
+.mapa {
+  max-width: 100%; /* Torna o mapa responsivo */
+  border: 0;
+}
